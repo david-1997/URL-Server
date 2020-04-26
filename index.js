@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const MongoClient = require('mongodb');
-const url = "mongodb://localhost:27017"
+const url = "mongodb+srv://david:david@1997@cluster0-o20vy.mongodb.net/test?retryWrites=true&w=majority"
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -52,6 +52,4 @@ function shortURL() {
     return short;
 }
 
-app.listen(3000, function () {
-    console.log("Port is running in 3000")
-})
+app.listen(process.env.PORT);
