@@ -44,7 +44,7 @@ function shortURL() {
     var short = "";
     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     var charLen = characters.length;
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 7; i++) {
         short += characters.charAt(
             Math.floor(Math.random() * charLen)
         );
